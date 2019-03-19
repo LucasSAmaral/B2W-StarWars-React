@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import ImageLogo from './components/ImageLogo';
 import './scss/App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>teste</h1>
+        <div className="container">
+            <ImageLogo />
+        </div>
       </div>
     );
   }
