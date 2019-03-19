@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ImageLogo from './components/ImageLogo';
 import MenuButtons from './components/MenuButtons';
-import './scss/App.scss';
+import './scss/Style.scss';
 
 class App extends Component {
   render() {
