@@ -5,9 +5,9 @@ class MenuButtons extends Component {
     render() {
         return(
             <div className="content__menu hide">
-                <Buttons className="button" text="Play Game" path="/planets" />
-                <Buttons className="button" text="About The App" path="/abouttheapp" />
-                <Buttons className="button" text="About Me" path="/aboutme" />
+                <Buttons text="Play Game" path="/planets" />
+                <Buttons text="About The App" path="/abouttheapp" />
+                <Buttons text="About Me" path="/aboutme" />
             </div>
         )
     }
