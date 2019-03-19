@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ImageLogo from './components/ImageLogo';
+import MenuButtons from './components/MenuButtons';
 import './scss/App.scss';
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
             <ImageLogo />
+            <MenuButtons />
         </div>
       </div>
     );
