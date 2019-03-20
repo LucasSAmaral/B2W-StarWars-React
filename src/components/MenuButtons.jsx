@@ -3,7 +3,7 @@ import Buttons from './Buttons';
 
 class MenuButtons extends Component {
     render() {
-        return(
+        return (
             <div className="content__menu hide">
                 <Buttons text="Play Game" path="/planets" />
                 <Buttons text="About The App" path="/abouttheapp" />
@@ -13,4 +13,4 @@ class MenuButtons extends Component {
     }
 }
 
-export default MenuButtons;
+export default MenuButtons

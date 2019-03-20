@@ -9,24 +9,24 @@ class ALongTimeAgo extends Component {
             text: 'A long time ago in a galaxy far, far away....',
         }
     }
-    
+
     componentDidMount() {
         let screenWidth = window.innerWidth;
-        setTimeout(()=>{
+        setTimeout(() => {
             $('.ALongTimeAgo__container').fadeOut(200);
-        },5000);
-        if(screenWidth >= 1024) {
-            setTimeout(()=>{
+        }, 5000);
+        if (screenWidth >= 1024) {
+            setTimeout(() => {
                 $('.app__logo').removeClass('big');
-            },8000);
+            }, 8000);
         }
-        setTimeout(()=>{
+        setTimeout(() => {
             $('.content__menu').removeClass('hide');
-        },9000);
+        }, 9000);
     }
 
     render() {
-        return(
+        return (
             <div className="ALongTimeAgo__container">
                 <div className="ALongTimeAgo__background">
                     <div className="ALongTimeAgo__text">
@@ -38,4 +38,4 @@ class ALongTimeAgo extends Component {
     }
 }
 
-export default ALongTimeAgo;
+export default ALongTimeAgo

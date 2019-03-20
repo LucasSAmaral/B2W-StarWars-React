@@ -4,16 +4,16 @@ class ThemeMusic extends Component {
 
     componentDidMount() {
         const themeSong = document.getElementById('themeSong');
-        setTimeout(()=>{
+        setTimeout(() => {
             themeSong.play();
-        },5000)
+        }, 5000)
     }
 
     render() {
-        return(
+        return (
             <audio id="themeSong" src="https://www.thesoundarchive.com/starwars/star-wars-theme-song.mp3"></audio>
         )
     }
 }
 
-export default ThemeMusic;
+export default ThemeMusic
