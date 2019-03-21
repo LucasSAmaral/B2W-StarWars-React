@@ -1,0 +1,11 @@
+.loading {
+    &__container {
+        position: absolute;
+        width: calc(100% - 20px);
+        justify-content: center;
+        display: flex;
+        top: calc(50% - (245px/2));
+        background-color: #000000;
+        padding-bottom: 25px;
+    }
+}
