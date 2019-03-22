@@ -60,7 +60,7 @@ class Planets extends Component {
                         <p><span>Population:</span> {this.state.planets.population}</p>
                         <p><span>Climate:</span> {this.state.planets.climate}</p>
                         <p><span>Terrain:</span> {this.state.planets.terrain}</p>
-                        <p><span>Featured in</span> {this.state.qtdFilms} <span>films</span></p>
+                        <p><span>Featured in</span> {this.state.qtdFilms} <span>{this.state.qtdFilms <= 1 ? 'film': 'films'}</span></p>
                     </div>
                 </div>
                 <div className="planets__buttons">

@@ -15,6 +15,7 @@ class AboutTheApp extends Component {
                         <li>React</li>
                         <li>Axios</li>
                         <li>CSS (SCSS)</li>
+                        <li>Netlify</li>
                         <li>And a bit (just a little bit) of jQuery</li>
                     </ul>
                 </div>
