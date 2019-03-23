@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Star Wars Planets</h1>
 
-## Available Scripts
+<h2 align="center"><img src="https://www.mysoti.com/img/user/angold01/product/web/1447319/1447319_show_default.png" width="500" alt="Millenium Falcon"></img></h2>
 
-In the project directory, you can run:
+## Descrição
 
-### `npm start`
+Este é um desafio proposto pela B2W Digital, que consiste no desenvolvimento de um jogo que serve como base para adivinhar o nome de um planeta existente no universo Star Wars, através de informações como: população, clima, terreno e em quantos filmes o planeta apareceu. O planeta será sorteado pela aplicação.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Sumário
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
++ Star Wars Planets
+    + Regras do jogo
+    + Como jogar?
+        + Na internet
+        + Localmente
+            + Primeira Etapa
+            + Segunda Etapa
+    + Como foi feito?
 
-### `npm test`
+### Star Wars Planets
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Regras do jogo
 
-### `npm run build`
+As regras ficam à critério dos jogadores. Eles podem decidir sobre o número de tentativas e erros até passar a vez, quantas vezes pode-se pular para que assim outro planeta seja sorteado e etc. E claro, é muito mais legal se duas ou mais pessoas estiverem participando do jogo.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Como jogar?
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Digamos que duas pessoas irão começar a jogar Star Wars Planets. Uma vai fazer as perguntas e a outra irá tentar adivinhar o nome do planeta.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A primeira pessoa, assim que o menu carregar, vai clicar no botão "Play Game". Assim que ela tiver clicado, um planeta será sorteado e suas características serão apresentadas. A primeira pessoa pode perguntar, por exemplo, qual planeta no universo Star Wars possui o clima árido, ou que possua somente oceanos em sua superfície.
 
-### `npm run eject`
+Se a segunda pessoa acertar, a primeira pessoa vai clicar no botão "Next" para que um outro planeta seja sorteado.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### Na internet
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Você não precisa ser um cavaleiro Jedi para ser um seguidor da Força.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Caso queira jogar em qualquer lugar, basta acessar o seguinte endereço: https://b2w-star-wars-react-lucas-amaral.netlify.com/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##### Localmente
 
-## Learn More
+Agora, caso você queira se aprofundar e saber mais sobre os caminhos da Força, vamos ter que cumprir algumas etapas.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###### Primeira Etapa
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Você vai precisar instalar o node.js no seu computador. O instalador pode ser baixado [aqui](https://nodejs.org/en/download/).
 
-### Code Splitting
+Agora vamos abrir o terminal e seguir para a próxima etapa.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Mas antes, caso você não tenha nenhum terminal instalado, você pode baixar o instalador nos seguintes links:
 
-### Analyzing the Bundle Size
+Se você for usuário de Windows, [clique aqui](https://gitforwindows.org/).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Caso use Linux ou Mac, [clique aqui](https://git-scm.com/downloads). Nesse link há também uma opção de download para Windows.
 
-### Making a Progressive Web App
+Agora sim! Vamos para a segunda etapa.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+###### Segunda Etapa
 
-### Advanced Configuration
+Agora você já é um Padawan. E sua primeira missão será clonar o repositório para a sua máquina.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Abra o terminal e digite o seguinte:
 
-### Deployment
+``` bash
+git clone https://github.com/LucasSAmaral/B2W-StarWars-React.git
+```
+Espere até que todo o repositório seja baixado e digite:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+``` bash
+cd B2W-StarWars-React
+```
+Agora que você entrou na pasta do projeto, será necessário instalar todas as dependências para que o jogo possa rodar no seu computador. Para isso, digite o comando abaixo e espere a instalação terminar.
 
-### `npm run build` fails to minify
+``` bash
+npm install
+```
+Por fim, você vai precisar do último comando abaixo para começar a jogar. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+``` bash
+npm start
+```
+Missão cumprida, jovem Padawan! Eu sabia que a Força é forte em você!
+
+Acesse o endereço http://localhost:3000 e comece a jogar.
+
+### Como foi feito?
+
+Para desenvolver a aplicação, utilizei as seguintes tecnologias:
+
+* React para criar os componentes e fazer a navegação por rotas.
+
+* Axios para fazer a requisição à API.
+
+* O pré-processador SASS, para a reutilizar o código CSS em algumas páginas.
+
+* jQuery para fazer as transições da versão desktop da página principal.
+
+* Foi utilizada a API [SWAPI](https://swapi.co), que possui uma base de dados com informações sobre planetas, naves, veículos, espécies e personagens do universo Star Wars.
+
+* Netlify para hospedar o projeto.
+
+* Foi feito um Teste Unitário para checar a renderização dos componentes. Use o seguinte comando para rodar esse teste:
+    
+``` bash
+npm test
+```
