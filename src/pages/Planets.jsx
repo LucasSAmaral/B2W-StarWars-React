@@ -33,7 +33,7 @@ class Planets extends Component {
     let randomNumber = Math.floor(Math.random() * (61 - 1 + 1)) + 1;
 
     axios
-      .get(`https://swapi.dev/api/planets/${randomNumber}`)
+      .get(`https://swapi.dev/api/planets/${randomNumber}/`)
       .then((response) => {
         this.setState({
           planets: response.data,
